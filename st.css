@@ -1,0 +1,668 @@
+:root {
+    --red : #f53b57;
+}
+*{
+    padding: 0;
+    margin: 0;
+    color: #000;
+    text-decoration: none;
+    text-transform: capitalize;
+
+}
+
+*::selection{
+    color:whitesmoke;
+    background: red;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    background: url("images/header-bg.png") no-repeat;
+    background-position: bottom;
+    background-size: cover;
+    z-index: 10000;
+    padding: 1.5rem 3%;
+    padding-bottom: 6rem;
+
+}
+
+header .container {
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   
+
+}
+
+.logo{
+    font-size: 2rem;
+}
+
+.logo:hover {
+    color:red;
+}
+
+.logo i {
+    color: red;
+    padding-right: .5rem;
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 2rem;
+}
+
+nav li a{
+    font-size: 1.5rem;
+}
+
+nav li a:hover{
+    color: red;
+}
+
+section{
+    width: 100%;
+    height: 100vh;
+    padding-top:11rem ;
+}
+
+.home .container{
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+
+
+.home{
+
+   background: url("images/background.png") no-repeat;
+   background-position: bottom;
+   background-size: cover;
+}
+
+
+.home .container .text{
+    padding: 1rem;
+    margin-left: 2rem;
+}
+
+.home .container .text h1{
+    color: red;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.home .container .text h2{
+    font-size: 2rem;
+}
+
+.home .container .text p{
+    font-size: 1.5rem;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+.btn{
+    background: red;
+    border-radius:4rem;
+    padding:1.5rem;
+    font-size: 1.5rem;
+    color: whitesmoke;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.home .container .image{
+    width: 36vw;
+    position: relative;
+    top: -9rem;
+}
+
+#menu-bars{
+    position: absolute;
+    top: 0rem;
+    right: 0;
+    margin: 2rem;
+    font-size: 2rem;
+    cursor: pointer;
+    display: none;
+}
+
+#menu-bars:hover {
+    color:red;
+}
+
+
+.feauters {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+
+.up-and-down::before,
+.up-and-down::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%) ;
+    height: 10rem;
+    width: 100%;
+    background-size: cover;
+    
+ }
+
+ .up-and-down::before{
+    background:url(../images/img-top.png) no-repeat;
+    top:-6rem;
+  }
+
+  .up-and-down::after{
+    background:url(../images/img-down.png) no-repeat;
+    bottom:-6rem;
+  }
+  
+
+.feauters .box-container .box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem;
+}
+
+.feauters .box-container .box .image-box {
+    width: 7rem;
+    margin-bottom: 1rem;
+}
+.feauters .stick {
+   height: 80%;
+   margin-top: 2rem;
+   width: 6rem;
+}
+
+.feauters .box-container .box h2 {
+    font-size: 1.5rem;
+    color: red;
+}
+
+.feauters .box-container .box .big-picture {
+    width: 5rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.feauters .box-container .box .big-picture-two {
+    position: relative;
+
+    width:6rem;
+    margin-top:5rem;
+    margin-bottom: 2rem;
+}
+
+
+.feauters .box-container .box p {
+    font-size: 1.2rem;
+}
+
+.feauters .box-container .box {
+    text-align: center;
+}
+
+
+.about .title {
+   text-align: center;
+   margin: 2rem;
+   color: red;
+   font-size: 3rem;
+}
+
+.about .about-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.about .about-container h2 {
+    color: red;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.about .about-container p {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+    margin-right: 1rem;
+    font-style:oblique;
+
+}
+
+.about .about-container .text {
+    text-align: center;
+}
+
+
+.services .title {
+    text-align: center;
+    font-size: 3rem;
+    color: red;
+    margin: 3rem;
+}
+
+.services {
+    position: relative;
+}
+
+.services .box-container {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0 2rem;
+}
+  
+.services .box-container .box {
+    overflow: hidden;
+    height: 23rem;
+    width: 20rem;
+    position: relative;
+    margin: 1rem;
+    border-radius: 1rem;
+    flex: 1 1 25rem;
+}
+
+.services .box-container .box .image-services {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+
+.services .box-container .box .info {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.7);
+  top: -100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.services .box-container .box .info h3 {
+    color: whitesmoke;
+    text-align: center;
+    transform: translateY(9rem);
+}
+
+.services .box-container .box:hover .info {
+    top:0;
+    transition-delay: 0.7ms;
+}
+
+
+.title {
+    text-align: center;
+    font-size: 4rem;
+    color: red;
+    margin-bottom: 3rem;
+    margin-top: -6rem;
+}
+
+
+.backgroud {
+
+    background: url("images/background.png") no-repeat;
+    background-position: bottom;
+    background-size: cover;
+    height: 100%;
+ 
+}
+
+.teachers .box-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 2rem;
+}
+
+.teachers .box-container .box {
+    margin: 1rem;
+    position: relative;
+    border: 0.01rem solid black;
+    border-radius: 1rem;
+    overflow: hidden;
+    padding: 1rem;
+    flex: 1 1 8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: url(images/card-bg1.png);
+    background-size: cover;
+    background-position: bottom;
+}
+
+.teachers .box-container .box img {
+    margin: 0 1rem;
+    width: 13rem;
+    border: 1px solid black;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.teachers .box-container .box h3 {
+    margin: 1rem;
+    font-size: 2rem;
+    color: red;
+    text-align: center;
+}
+
+.teachers .box-container .box span {
+    margin: 0 1rem;
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+.teachers .box-container .box .share {
+    margin-bottom: 1rem;
+ }
+
+.teachers .box-container .box .share ul li {
+    display: inline-block;
+}
+
+.teachers .box-container .box .share ul li a {
+width: 1.5rem;
+height: 1.3rem;
+margin: 0.2rem;
+
+border: 0.1px solid black;
+border-radius: 50%;
+padding: 0.3rem;
+font-size: 1.3rem;
+}
+
+.teachers .box-container .box .share ul li a:hover {
+    color:white;
+    background-color: red;
+    border: whitesmoke;
+    transition: 0.5s;
+}
+
+.prices .box-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.prices .box-container .box {
+    width: 20rem;
+    height: 23rem;
+    border: 1px solid black;
+    border-radius: 1rem;
+    background: url(images/card-bg1.png);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 2rem 2rem ;
+    flex: 1 1 19rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+
+}
+
+.prices .box-container .box .box-title {
+    text-align: center;
+    margin: 1rem;
+    font-size: 2rem;
+    color: red;
+
+}
+
+.prices .box-container .box .price {
+    color: red;
+    font-size: 4rem;
+    position: relative;
+    text-align: center;
+    
+}
+
+.prices .box-container .box  .dollor-sign {
+    font-size: 2rem;
+    color: red;
+}
+
+.prices .box-container .box .some-text {
+    font-size: 1.2rem;
+    margin: 1rem ;
+    text-align: center;
+}
+
+.prices .box-container .box .btn {
+    margin-top: 1rem;
+
+    display: inline-block;
+    text-align: center;
+    width: 10rem;
+}
+
+.prices .box-container .box .best-choise {
+    position: absolute;
+    top: 0;
+    background-color: red;
+    width: 11rem;
+    height: 4rem;
+    color: white;
+    text-align: center;
+
+    padding: 0.5rem;
+    right: -3.3rem;
+    transform: rotate(45deg);
+   
+}
+.prices .box-container .box .best-choise h3 {
+    color:whitesmoke;
+    margin-top: 1rem;
+    margin-right: 1.6rem;
+    font-size: 1.5rem;
+}
+
+.footer {
+    position: relative;
+    height: 4rem;
+    width: 100%;
+    text-align: center;
+
+  
+}
+
+.footer h3 {
+    margin: 2rem;
+    font-size: 1.5rem;
+}
+
+.footer h3 span {
+    color: red;
+}
+
+@media(max-width:750px){
+  
+
+    header .container{
+        display: inline;
+        
+    }
+    #menu-bars{
+        display: block;
+    }
+    .logo{
+        top: 0;
+        left: 0;
+    }
+    .home .container .image{
+         display: none;
+    }
+    nav {
+
+        width: 100%;
+        height: 100vh;
+        margin-left: 20rem;
+        margin-top: 2rem;
+        display: none;
+        
+   
+
+    }
+    nav ul{
+        display: flex;
+        flex-direction: column;
+    }
+    nav li {
+        margin-top:4rem ;
+       
+    }
+    nav li a{
+        font-size: 2rem;
+    }
+
+    .nav-toggle{
+        background: url("images/card-bg3.png");
+        background-position: center;
+        background-size: cover;
+        
+        display: block;
+    }
+
+    .home .container .text{
+        margin-top: 10rem;
+        text-align: center;
+    }
+ 
+    .feauters .stick {
+        display: none;
+    }
+
+    .feauters {
+        flex-direction: column;
+        margin-top: 4rem;
+        margin-bottom: 4rem;
+    }
+
+    .up-and-down::before,
+    .up-and-down::after {
+        height: 4rem;
+    }
+    .up-and-down::after{
+        bottom: -150rem;
+    }
+
+    .about .about-container {
+        flex-direction: column;
+    }
+
+    .about .about-container .image-about {
+        width: 60vw;
+        margin: 1rem 0;
+    } 
+
+    .services .box-container .box {
+        height: 17rem;
+        flex: 1 1 10rem;
+    }
+
+    .teachers .box-container .box {
+        height: 34rem;
+ 
+    }
+
+    .teachers .box-container .box img {
+
+        width: 10rem;
+
+    
+    }
+
+    .teachers .box-container .box span {
+        margin-bottom: 2rem;
+    }
+    .footer {
+        position: relative;
+        top: 20rem;
+        bottom: 0;
+       }
+        
+
+}
+
+
+@media (max-width:860px) {
+
+
+   .services .box-container .box {
+    height: 17rem;
+    flex: 1 1 15rem;
+}
+.teachers .box-container .box {
+    height: 37rem;
+}
+
+.up-and-down::before,
+.up-and-down::after {
+    height: 4rem;
+}
+.up-and-down::after{
+    bottom: -150rem;
+}
+
+}
+@media (max-width:500px){
+
+    
+    .teachers .box-container .box {
+        width: 25rem;
+        height: 33rem;
+    }
+
+    .teachers .box-container .box h3 {
+        font-size: 1.9rem;
+    }
+    .teachers .box-container .box img {
+
+        width: 8rem;
+        margin-top:1.5rem ;
+
+    
+    }
+
+   .footer {
+    position: relative;
+    top: 20rem;
+    bottom: 0;
+   }
+    
+   
+}
